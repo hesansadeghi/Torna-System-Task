@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="@dimen/_10dp"
+    android:backgroundTint="@color/blue"
+    android:id="@+id/card_main"
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/tv_full_message_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10dp"
+            android:text="@string/full_message"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tv_full_message_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10dp"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_full_message_title" />
+
+
+        <TextView
+            android:id="@+id/tv_mti_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10dp"
+            android:text="@string/mti"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_full_message_value" />
+
+
+        <TextView
+            android:id="@+id/tv_mti_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10dp"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toStartOf="@id/tv_mti_title"
+            app:layout_constraintTop_toBottomOf="@id/tv_full_message_value" />
+
+
+        <TextView
+            android:id="@+id/tv_bitmap_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10dp"
+            android:text="@string/bitmap"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_mti_title" />
+
+
+        <TextView
+            android:id="@+id/tv_bitmap_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10dp"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toStartOf="@id/tv_bitmap_title"
+            app:layout_constraintTop_toBottomOf="@id/tv_mti_title" />
+
+
+        <TextView
+            android:id="@+id/tv_stan_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10dp"
+            android:text="@string/stan"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_bitmap_title" />
+
+
+        <TextView
+            android:id="@+id/tv_stan_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10dp"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toStartOf="@id/tv_stan_title"
+            app:layout_constraintTop_toBottomOf="@id/tv_bitmap_title" />
+
+
+        <TextView
+            android:id="@+id/tv_pan_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10dp"
+            android:text="@string/card_number_title"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_stan_title" />
+
+
+        <TextView
+            android:id="@+id/tv_pan_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10dp"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toStartOf="@id/tv_pan_title"
+            app:layout_constraintTop_toBottomOf="@id/tv_stan_title" />
+
+
+
+        <TextView
+            android:id="@+id/tv_data_time_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10dp"
+            android:text="@string/date_time"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_pan_title" />
+
+
+        <TextView
+            android:id="@+id/tv_data_time_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10dp"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toStartOf="@id/tv_data_time_title"
+            app:layout_constraintTop_toBottomOf="@id/tv_pan_title" />
+
+
+        <TextView
+            android:id="@+id/tv_amount_transaction_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10dp"
+            android:text="@string/amount_title"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_data_time_title" />
+
+
+        <TextView
+            android:id="@+id/tv_amount_transaction_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10dp"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toStartOf="@id/tv_amount_transaction_title"
+            app:layout_constraintTop_toBottomOf="@id/tv_data_time_title" />
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

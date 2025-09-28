@@ -1,0 +1,37 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TornaSystemISO8583Task" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.TornaSystemISO8583Task" parent="Base.Theme.TornaSystemISO8583Task" />
+
+
+    <style name="CustomOutLineBox" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+
+        <item name="startIconTint">@color/white</item>
+        <item name="hintTextColor">@color/white</item>
+        <item name="fontFamily">@font/iransans_bold</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="boxStrokeColor">@color/black</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxBackgroundColor">@color/teal_200</item>
+        <item name="android:layout_marginTop">@dimen/_20dp</item>
+        <item name="boxCornerRadiusTopStart">@dimen/_10dp</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/_10dp</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/_10dp</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/_10dp</item>
+
+    </style>
+
+
+    <style name="TextViewWhiteLightStyle" parent="Widget.AppCompat.TextView">
+        <item name="fontFamily">@font/iransans_bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textSize">@dimen/_16sp</item>
+    </style>
+
+
+</resources>

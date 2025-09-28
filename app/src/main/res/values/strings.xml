@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TornaSystemISO8583Task</string>
+    <string name="card_number">شماره کارت</string>
+    <string name="amount">مبلغ</string>
+    <string name="register_message">ثبت پیام</string>
+    <string name="full_message">کل پیام:</string>
+    <string name="mti">:MTI</string>
+    <string name="bitmap">:BITMAP</string>
+    <string name="stan">شماره پیگیری:</string>
+    <string name="card_number_title">شماره کارت:</string>
+    <string name="date_time">تاریخ و زمان ارسال:</string>
+    <string name="amount_title">مبلغ:</string>
+</resources>

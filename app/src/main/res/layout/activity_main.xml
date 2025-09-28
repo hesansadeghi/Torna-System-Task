@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:fitsSystemWindows="true"
+    android:layoutDirection="rtl"
+    tools:context=".ui.MainActivity">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_card_number"
+        style="@style/CustomOutLineBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_15dp"
+        android:hint="@string/card_number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_card_number"
+            style="@style/TextViewWhiteLightStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:layoutDirection="ltr"
+            android:maxLength="22"
+            android:maxLines="1" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_amount"
+        style="@style/CustomOutLineBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/amount"
+        app:layout_constraintEnd_toEndOf="@id/input_card_number"
+        app:layout_constraintStart_toStartOf="@id/input_card_number"
+        app:layout_constraintTop_toBottomOf="@id/input_card_number">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_amount"
+            style="@style/TextViewWhiteLightStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:layoutDirection="ltr"
+            android:maxLength="15"
+            android:maxLines="1" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_submit"
+        style="@style/TextViewWhiteLightStyle"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_65dp"
+        android:layout_marginTop="@dimen/_20dp"
+        android:backgroundTint="@color/purple_700"
+        android:fontFamily="@font/iransans_bold"
+        android:text="@string/register_message"
+        android:textSize="@dimen/_16sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="@id/input_amount"
+        app:layout_constraintStart_toStartOf="@id/input_amount"
+        app:layout_constraintTop_toBottomOf="@id/input_amount" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/iso8583RecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingHorizontal="@dimen/_10dp"
+        android:paddingTop="@dimen/_10dp"
+        android:paddingBottom="@dimen/_65dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_submit"
+        tools:listitem="@layout/ios_8583_message_item" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
