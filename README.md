@@ -12,4 +12,4 @@
 - Language: Kotlin
 - Data Base: DB Room 
 - Architecture: MVVM
-- Other: Coroutines, Hilt/Dagger for dependency injection 
+- Other: Coroutines, Hilt/Dagger for dependency injection, ISO 8583
